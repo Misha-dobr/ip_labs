@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №3 — Мультимедіа</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        .container { display: flex; gap: 20px; }
+        main { flex: 3; }
+        aside { flex: 1; border-left: 1px solid #ccc; padding-left: 15px; }
+        section { margin-bottom: 30px; }
+        .subscribe-btn { background-color: #cc0000; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; text-decoration: none; }
+        .preview-item { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; text-decoration: none; color: #000; }
+        .preview-item img { width: 120px; height: auto; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <!-- Пункт 4.4: Заголовок H1 з назвою YouTube-каналу -->
+    <header>
+        <h1>IT коледж Львівської політехніки — @itcollegelviv</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <!-- Пункт 4.5: Секція 1 — Логотип коледжу (висота 300px) -->
+            <section id="section-1">
+                <img src="C:\Users\student\Desktop\IP\ip_labs\lab3\icon.jpg" alt="Логотип ІТ коледжу Львівської політехніки" height="300">
+            </section>
+
+            <!-- Пункт 4.6: Секція 2 — Опис та кнопка "Підписатися" -->
+            <section id="section-2">
+                <p>Ласкаво просимо на офіційній сторінці відеоматеріалів ІТ коледжу Львівської політехніки. Підписуйтесь, щоб не пропустити нові подкасти та огляди спеціальностей!</p>
+                <a href="https://www.youtube.com/@itcollegelviv" target="_blank" class="subscribe-btn">Підписатися</a>
+            </section>
+
+            <!-- Пункт 4.7: Секція 3 — Тег <video> (висота 540px, ширина 80%) -->
+            <section id="section-3">
+                <h2>Промо-відео коледжу</h2>
+                <video controls height="540" style="width: 80%;">
+                    <source src="media/video.mp4" type="video/mp4">
+                    <p>Ваш браузер не підтримує тег video. <a href="media/video.mp4">Завантажте відео</a>.</p>
+                </video>
+            </section>
+
+            <!-- Пункт 4.8: Секція 4 — Тег <audio> -->
+            <section id="section-4">
+                <h2>Подкаст для абітурієнтів (Аудіо)</h2>
+                <audio controls preload="auto">
+                    <source src="media/audio.mp3" type="audio/mp3">
+                    <p>Ваш браузер не підтримує аудіоелемент. <a href="media/audio.mp3">Завантажте аудіофайл</a>.</p>
+                </audio>
+            </section>
+
+            <!-- Пункт 4.9: Секція 5 — Вбудоване YouTube відео через <iframe> -->
+            <section id="section-5">
+                <h2>Трансляція про навчання в коледжі</h2>
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </section>
+
+            <!-- Пункт 4.10: Секція 6 — Карта Google Maps через <iframe> -->
+            <section id="section-6">
+                <h2>Карта: Університети та коледжі Львова</h2>
+                <!-- Вставте сюди ваше посилання з Google My Maps -->
+                <iframe 
+                    src="https://www.google.com/maps/d/embed?mid=1234567890example" 
+                    width="640" 
+                    height="480"
+                    loading="lazy">
+                </iframe>
+            </section>
+        </main>
+
+        <!-- Пункт 4.11: Блок aside з 5 прев'ю відео -->
+        <aside>
+            <h3>Спеціальності та освітні програми</h3>
+            
+            <a href="https://www.youtube.com/watch?v=example1" class="preview-item">
+                <img src="media/preview1.jpg" alt="Прев'ю 1">
+                <span>Вивчай спеціальність майбутнього... (0:35)</span>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=example2" class="preview-item">
+                <img src="media/preview2.jpg" alt="Прев'ю 2">
+                <span>122 Комп'ютерні науки. Вступ у ІТ... (0:28)</span>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=example3" class="preview-item">
+                <img src="media/preview3.jpg" alt="Прев'ю 3">
+                <span>172 Телекомунікації та радіотехніка (0:31)</span>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=example4" class="preview-item">
+                <img src="media/preview4.jpg" alt="Прев'ю 4">
+                <span>172 Інжиніринг та мережні технології (0:31)</span>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=example5" class="preview-item">
+                <img src="media/preview5.jpg" alt="Прев'ю 5">
+                <span>029 Інформаційна та архівна справа (0:33)</span>
+            </a>
+        </aside>
+    </div>
+
+</body>
+</html>
