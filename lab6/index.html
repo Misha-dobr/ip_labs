@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторна робота №6</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Лабораторна робота #6</h1>
+  </header>
+
+  <main class="container">
+    <!-- Секція 1: Обтікання тексту -->
+    <section class="section-float">
+      <h2>Секція 1: Обтікання тексту</h2>
+      
+      <!-- Перший блок: картинка зліва -->
+      <div class="float-block">
+        <img src="img/image.svg" alt="SVG Image" class="img-left">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, felis at porttitor convallis, velit nisl fringilla nunc, nec malesuada libero nulla sit amet risus. Ut et velit a sapien facilisis viverra sit amet a risus. Integer id velit nec odio tincidunt posuere ut eget erat. Nullam auctor ex sed magna fermentum, eget scelerisque lacus malesuada. Aenean fringilla ante id ligula sollicitudin. Sed a risus vitae ligula venenatis malesuada. Curabitur malesuada, magna at sodales euismod, felis urna rutrum justo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec erat vel nisl dapibus lacinia nec vel augue. Integer pellentesque magna vel mi vestibulum, quis ultricies ex faucibus. Vivamus condimentum mi quis magna vehicula sagittis. Donec at arcu sed nunc sodales posuere. Vestibulum scelerisque id risus non lacinia. Mauris eu risus lobortis, congue sapien quis, fermentum felis.</p>
+        <p class="clear">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum at lacus nec vehicula. Aliquam posuere risus sit amet malesuada, ut auctor eros hendrerit nec. Nullam interdum at lacus nec vehicula.</p>
+      </div>
+
+      <!-- Другий блок: текст зліва, картинка по центру-зліва, текст справа -->
+      <div class="float-block">
+        <div class="text-left-col">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, felis at porttitor convallis, velit nisl fringilla.</p>
+        </div>
+        <img src="img/image.svg" alt="SVG Image" class="img-left">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, felis at porttitor convallis, velit nisl fringilla nunc, nec malesuada libero nulla sit amet risus. Ut et velit a sapien facilisis viverra sit amet a risus. Integer id velit nec odio tincidunt posuere ut eget erat. Nullam auctor ex sed magna fermentum, eget scelerisque lacus malesuada. Aenean fringilla ante id ligula sollicitudin. Sed a risus vitae ligula venenatis malesuada.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec erat vel nisl dapibus lacinia nec vel augue. Integer pellentesque magna vel mi vestibulum, quis ultricies ex faucibus. Vivamus condimentum mi quis magna vehicula sagittis. Donec at arcu sed nunc sodales posuere.</p>
+        <p class="clear">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum at lacus nec vehicula. Aliquam posuere risus sit amet malesuada. Vivamus condimentum mi quis magna vehicula sagittis. Donec at arcu sed nunc sodales posuere.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum at lacus nec vehicula. Aliquam posuere risus sit amet malesuada, ut auctor eros hendrerit nec. Nullam interdum at lacus nec vehicula.</p>
+      </div>
+    </section>
+
+    <!-- Секція 2: Багатоколонковий макет -->
+    <section class="section-columns">
+      <h2>Секція 2: Багатоколонковий макет</h2>
+      <div class="multicolumn-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, felis at porttitor convallis, velit nisl fringilla nunc, nec malesuada libero nulla sit amet risus. Ut et velit a sapien facilisis viverra sit amet a risus. Integer id velit nec odio tincidunt posuere ut eget erat. Nullam auctor ex sed magna fermentum, eget scelerisque lacus malesuada. Aenean fringilla ante id ligula sollicitudin. Donec volutpat nisl at lacus tincidunt, vitae tempus nulla vulputate.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque magna vel mi vestibulum, quis ultricies ex faucibus. Vivamus condimentum mi quis magna vehicula sagittis. Vestibulum scelerisque id risus non lacinia. Mauris eu risus lobortis, congue sapien quis, fermentum felis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero justo, ut facilisis magna pretium id. Vivamus nunc nisl fermentum viverra. Mauris suscipit tristique nisl, ut auctor eros hendrerit nec. Nullam interdum at lacus nec vehicula. Aliquam posuere risus sit amet malesuada.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt nisi sit amet velit dictum, in suscipit libero aliquam. Suspendisse tortor sapien nec ligula ultrices, eget efficitur purus malesuada.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, felis at porttitor convallis, velit nisl fringilla nunc, nec malesuada libero nulla sit amet risus. Integer pellentesque magna vel mi vestibulum, quis ultricies ex faucibus. Vivamus condimentum mi quis magna vehicula sagittis.</p>
+      </div>
+    </section>
+
+    <!-- Секція 3: Модальне вікно -->
+    <section class="section-modal">
+      <h2>Секція 3: Модальне вікно - email</h2>
+      <button id="openModalBtn" class="btn-green">Підписатися</button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque magna vel mi vestibulum, quis ultricies ex faucibus. Vivamus condimentum mi quis magna vehicula sagittis. Vestibulum scelerisque id risus non lacinia.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero justo, ut facilisis magna pretium id. Vivamus nunc nisl fermentum viverra. Mauris suscipit tristique nisl, ut auctor eros hendrerit nec.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt nisi sit amet velit dictum, in suscipit libero aliquam. Suspendisse tortor sapien nec ligula ultrices, eget efficitur purus malesuada.</p>
+    </section>
+  </main>
+
+  <!-- Модальне вікно -->
+  <div id="emailModal" class="modal-overlay">
+    <div class="modal-window">
+      <span id="closeModalBtn" class="close-btn">&times;</span>
+      <form class="modal-form" action="#" method="post">
+        <label for="emailInput">Введіть вашу електронну пошту:</label>
+        <div class="input-group">
+          <input type="email" id="emailInput" required>
+          <button type="submit" class="btn-green">Зберегти</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('emailModal');
+    const openBtn = document.getElementById('openModalBtn');
+    const closeBtn = document.getElementById('closeModalBtn');
+
+    openBtn.onclick = () => modal.style.display = 'flex';
+    closeBtn.onclick = () => modal.style.display = 'none';
+    window.onclick = (e) => {
+      if (e.target === modal) modal.style.display = 'none';
+    };
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.45;
+  color: #222;
+  background-color: #ffffff;
+}
+
+.header {
+  background-color: #2e7d32;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Растягиваем контейнер на всю ширину с небольшими отступами по бокам, как в прототипе */
+.container {
+  width: 100%;
+  padding: 20px 25px;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+/* --- СЕКЦІЯ 1: Float та обтікання --- */
+.float-block {
+  margin-bottom: 20px;
+}
+
+.img-left {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 180px;
+  height: 180px;
+}
+
+/* Узкая левая колонка текста перед второй картинкой */
+.text-left-col {
+  float: left;
+  width: 180px;
+  margin-right: 15px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* --- СЕКЦІЯ 2: Багатоколонковий макет --- */
+.multicolumn-text {
+  column-count: 4;
+  column-gap: 20px;
+  column-rule: 1px solid #cccccc;
+}
+
+@media (max-width: 900px) {
+  .multicolumn-text {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .multicolumn-text {
+    column-count: 1;
+  }
+}
+
+/* --- СЕКЦІЯ 3: Кнопка та Модальне вікно --- */
+.btn-green {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 7px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.btn-green:hover {
+  background-color: #388e3c;
+}
+
+.modal-overlay {
+  display: none; /* Появляется при клике на "Підписатися" */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-window {
+  position: relative;
+  background-color: #ffffff;
+  width: 650px;
+  max-width: 90%;
+  min-height: 450px;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #666;
+}
+
+.modal-form {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.input-group input {
+  width: 80%;
+  padding: 5px 8px;
+  border: 2px solid #333;
+  border-radius: 3px;
+}
+
+.input-group .btn-green {
+  margin-bottom: 0;
+}
