@@ -1,0 +1,335 @@
+/* Скидання стилів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #2d2d2d;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* --- HEADER --- */
+.header {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.logo img {
+  height: 28px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.btn-link {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-blue {
+  background-color: #3366ff;
+  color: #ffffff;
+  padding: 10px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.btn-blue:hover {
+  background-color: #254edb;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  background-color: #f7f5fd;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 24px;
+  color: #2d2d2d;
+}
+
+.hero-subtitle {
+  max-width: 480px;
+  font-size: 16px;
+  color: #7a7a7a;
+  margin-bottom: 36px;
+}
+
+.btn-yellow {
+  display: inline-block;
+  background-color: #f8d57e;
+  color: #2d2d2d;
+  padding: 14px 44px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: background 0.2s;
+}
+
+.btn-yellow:hover {
+  background-color: #f3c85b;
+}
+
+/* --- VIDEO SECTION --- */
+.video-section {
+  background-color: #f2faf8;
+  padding: 70px 0;
+}
+
+.video-wrapper {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ccc;
+}
+
+.video-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+/* --- BRANDS --- */
+.brands {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px 60px;
+  color: #2d2d2d;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* --- FEATURES --- */
+.features {
+  padding: 50px 0 90px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 320px);
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: #f7f7f7;
+  padding: 36px 30px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.feature-icon img {
+  width: 36px;
+  height: 36px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  color: #7a7a7a;
+  line-height: 1.6;
+}
+
+/* --- TESTIMONIAL --- */
+.testimonial {
+  background-color: #e5f4f2;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.testimonial-container {
+  max-width: 680px;
+}
+
+.quote-mark {
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+}
+
+.testimonial blockquote {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.testimonial cite {
+  font-style: normal;
+  font-size: 15px;
+  color: #7a7a7a;
+}
+
+/* --- CTA SECTION --- */
+.cta-section {
+  background-color: #fcfaf5;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 520px;
+}
+
+.cta-section h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 16px;
+  color: #7a7a7a;
+  margin-bottom: 32px;
+}
+
+/* --- FOOTER --- */
+.footer {
+  background-color: #ffffff;
+  padding: 40px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+/* --- АДАПТИВНІСТЬ ПІД МАКЕТ Pets 360px --- */
+@media (max-width: 768px) {
+  .header-actions {
+    display: none; /* На мобільному макеті 360px кнопки Sign Up / Log in приховані */
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+
+  .cta-section h2 {
+    font-size: 38px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
